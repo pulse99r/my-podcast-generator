@@ -2,12 +2,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home'
-
+import Nav from './components/nav'
 import TextToSpeech from './components/textToSpeech'
 
 import './App.css'
 const GenerateScripts = () => {
-  return (
+  return ( 
     <div>
       <h2>Generate Scripts</h2>
       <p>Uniting Internet, Internet Appears, Internet Apps</p>
@@ -58,19 +58,18 @@ function App() {
   
   return (
      <div className="App">
-      
+        <h1>My Podcast Generator</h1>
       <Router>
       <div>
-        <h1>United Audio</h1>
         <nav>
-          <Link to="/"><Home /></Link> | 
-          <Link to="/text">Text to Speech</Link> | 
-          {/* <Link to="/existing2">Existing Component 2</Link> |  */}
-          <Link to="/generate">Generate Scripts</Link> | 
-          <Link to="/send">Send Scripts</Link> | 
-          <Link to="/podcast">Podcast Interface</Link> | 
-          <Link to="/progress">Step Progress</Link> | 
-          <Link to="/script-tree">Script Tree</Link>
+          <Link className='nav-item' to="/">Home</Link> | 
+          <Link className='nav-item' to="/text">Text to Speech</Link> | 
+          <Link className='nav-item' to="/existing2">Audio to Text</Link> | 
+          {/* <Link className='nav-item' to="/generate">Generate Scripts</Link> | 
+          <Link className='nav-item' to="/send">Send Scripts</Link> | 
+          <Link className='nav-item' to="/podcast">Podcast Interface</Link> | 
+          <Link className='nav-item' to="/progress">Step Progress</Link> | 
+          <Link className='nav-item' to="/script-tree">Script Tree</Link> */}
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />

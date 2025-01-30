@@ -1,0 +1,10 @@
+
+nav > .nav-item{
+    color: white;
+    padding: 0 10px;
+}
+nav > .nav-item:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: rgb(28, 34, 33);
+}

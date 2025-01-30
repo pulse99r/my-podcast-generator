@@ -6,3 +6,13 @@
   padding: 2rem;
   text-align: center;
 }
+Link{
+  text-decoration-line: none;
+}
+Link:hover{
+  cursor: pointer;
+  background-color: blue;
+}
+.nav-item{
+  /* color: red; */
+}
