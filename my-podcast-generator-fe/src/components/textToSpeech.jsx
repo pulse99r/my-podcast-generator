@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import './css/player.css'
+import './css/textToSpeech.css'
+
 // VoiceSelector Component
 const VoiceSelector = ({ voices, selectedVoice, onChange }) => (
   <div>
